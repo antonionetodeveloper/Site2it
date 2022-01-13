@@ -6,7 +6,7 @@ import {
 } from "react-router-dom"
 
 import Home from "./Pages/Home/index";
-import {Buy} from './Pages/Buy/index';
+import Buy from './Pages/Buy/index';
 import Exemples from "./Pages/Exemples/index";
 import Prices from "./Pages/Prices/index";
 

@@ -6,7 +6,7 @@ import "./fonts.css"
 
 import done from "../../Images/pages/buy/done.png"
 
-export function Buy() {
+export default function Buy() {
     
     const [step, setStep] = useState(1)
     function nextStepHandle(){
