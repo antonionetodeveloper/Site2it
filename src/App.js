@@ -1,4 +1,3 @@
-import React from "react"
 import {
   BrowserRouter as Router,
   Routes,
@@ -16,13 +15,12 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/atendimento" element={<Buy/>}/>
         <Route path="/exemplos" element={<Exemples/>}/>
         <Route path="/valores" element={<Prices/>}/>
       </Routes>
     </Router>
-    
   );
 }
 
