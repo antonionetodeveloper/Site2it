@@ -1,4 +1,4 @@
-import {useEffect, useState, useRef} from "react"
+import {useState, useRef} from "react"
 import emailjs from 'emailjs-com';
 
 import { Container} from "./styles"
@@ -18,14 +18,6 @@ export default function Buy() {
 
 
     const form = useRef();
-    
-    const [who,setWho] = useState('')
-    const [nicho,setNicho] = useState('')
-    const [text,setText] = useState('')
-    const [wpp,setWpp] = useState('')
-    const [email,setEmail] = useState('')
-    const [op1,setOp1] = useState('')
-    const [op2,setOp2] = useState('')
 
     async function sendEmail(e){
         e.preventDefault();
@@ -48,16 +40,15 @@ export default function Buy() {
                             <div className="nameANDnicho">
                                 <div className="name">
                                     <p>Nome do negócio: </p>
-                                    <input name="name" type="text" id="name" onChange={(e) => {setWho(e.target.value)}}/>
+                                    <input name="name" type="text" id="name" />
                                 </div>
                                 <div className="nicho">
                                     <p>Nicho: </p>
-                                    <input name="nicho" type="text" id="nicho" onChange={(e) => {setNicho(e.target.value)}}/>
+                                    <input name="nicho" type="text" id="nicho" />
                                 </div>    
                             </div>
                             <div className="description">
-                                <textarea name="text" type="text" id="description" placeholder="Deixe aqui os seus comentários.."
-                                onChange={(e) => {setText(e.target.value)}} />
+                                <textarea name="text" type="text" id="description" placeholder="Deixe aqui os seus comentários.." />
                             </div>
                             <button className="button"
                                 type="button"
@@ -70,12 +61,12 @@ export default function Buy() {
                         <section className="form2">
                             <p>Como podemos entrar em contato com você?</p>
                             <div className="wppANDemail">
-                                <input name="wpp" type="text" placeholder="Whatsapp"  id="wpp" onChange={(e) => {setWpp(e.target.value)}}/>
-                                <input name="email" type="text" placeholder="Email"  id="face" onChange={(e) => {setEmail(e.target.value)}}/>
+                                <input name="wpp" type="text" placeholder="Whatsapp"  id="wpp" />
+                                <input name="email" type="text" placeholder="Email"  id="face" />
                             </div>
                             <div className="opcional">
-                                <input name="op1" type="text" placeholder="(opcional)"  id="optional1" onChange={(e) => {setOp1(e.target.value)}}/>
-                                <input name="op2" type="text" placeholder="(opcional)"  id="optional2" onChange={(e) => {setOp2(e.target.value)}}/>
+                                <input name="op1" type="text" placeholder="(opcional)"  id="optional1" />
+                                <input name="op2" type="text" placeholder="(opcional)"  id="optional2" />
                             </div>
                             <button 
                                 type="submit"
@@ -90,7 +81,7 @@ export default function Buy() {
                         
                         <section className="form3">
                             <div className="imgANDtext">
-                                <img src={done}/>
+                                <img alt="" src={done}/>
                                 <div className="text">
                                     <p>Tudo pronto!</p>
                                     <p>Em breve entraremos em contato com você para<br/>

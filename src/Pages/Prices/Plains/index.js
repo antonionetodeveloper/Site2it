@@ -12,7 +12,7 @@ export const Plains = ({ title, subtitle, price, priceDescription, photo, isVisi
             </div>
 
             <div className="txt_and_img">
-                <img src={photo} />
+                <img alt="" src={photo} />
                 <p>
                     {subtitle}
                 </p>

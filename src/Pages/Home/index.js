@@ -20,33 +20,33 @@ export default function Home() {
             
               <nav id="nav">
                 <button id="btn_menu">
-                    <img src={menu} id="img_menu"/>
+                    <img alt="" src={menu} id="img_menu"/>
                 </button>
                 <button id="btn_fecha">
-                    <img src={back} id="img_fecha"/>
+                    <img alt="" src={back} id="img_fecha"/>
                 </button>
                 
                 <ul id="menu">
                   <li>
-                    <a href="CComponents/Site2it/Contents/Prices/prices.html">
+                    <a rel="noreferrer" href="CComponents/Site2it/Contents/Prices/prices.html">
                       Exemplos
                     </a>
                   </li>
 
                   <li>
-                    <a href="CComponents/Site2it/Contents/Prices/prices.html">
+                    <a rel="noreferrer" href="CComponents/Site2it/Contents/Prices/prices.html">
                       Valores
                     </a>
                   </li>
 
                   <li>
-                    <a href="CComponents/Site2it/Contents/Prices/prices.html">
+                    <a rel="noreferrer" href="CComponents/Site2it/Contents/Prices/prices.html">
                       Já sou cliente
                     </a>
                   </li>
 
                   <li>
-                    <a href="CComponents/Site2it/Contents/Prices/prices.html">
+                    <a rel="noreferrer" href="CComponents/Site2it/Contents/Prices/prices.html">
                       Contato
                     </a>
                   </li>
@@ -56,8 +56,8 @@ export default function Home() {
               
           <div id="nao_menu">
             <div className="logo">
-                <a href="#">
-                  <img src={logo} className="img_logo"/>
+                <a rel="noreferrer" href="https://site2it.com">
+                  <img alt="" src={logo} className="img_logo"/>
                   <h2>Site2it</h2>
                 </a>
             </div>
@@ -76,7 +76,7 @@ export default function Home() {
               </div>
 
                 <div className="woman">
-                  <img src={woman} id="woman"/>
+                  <img alt="" src={woman} id="woman"/>
                 </div>
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function Home() {
           <section id="section1">
             <div id="xp">
               <div className="img">
-                <img src={xp} id="img_xp"/>
+                <img alt="" src={xp} id="img_xp"/>
               </div>
                 
               <div className="txt_xp">
@@ -141,7 +141,7 @@ export default function Home() {
               </div>
                 
               <div className="img">
-                <img src={money} id="money"/>
+                <img alt="" src={money} id="money"/>
               </div>
             </div>
           </section>

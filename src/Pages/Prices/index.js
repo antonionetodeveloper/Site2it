@@ -25,7 +25,7 @@ export default function Prices() {
                     <p className="subtitulo">Vamos te contar quanto custa o seu site</p>
                 </div>
                 <Link to="/">
-                    <img src={backButton} id="back_button"/>
+                    <img alt="" src={backButton} id="back_button"/>
                 </Link>
             </Header>
 
@@ -36,7 +36,7 @@ export default function Prices() {
                             Básico
                         </p>
 
-                        <img src={basic} className="block_img"/>
+                        <img alt="" src={basic} className="block_img"/>
 
                         <ul>
                             <li>
@@ -53,7 +53,7 @@ export default function Prices() {
                         </ul>
 
                         
-                        <a href="#content">
+                        <a rel="noreferrer" href="#content">
                             <button className="button_see" id="bbasic" 
                                 onClick={() => setButtonHandle("basic plain")}>
                                 Ver mais
@@ -67,7 +67,7 @@ export default function Prices() {
                             Site Top
                         </p>
 
-                        <img src={top} className="block_img"/>
+                        <img alt="" src={top} className="block_img"/>
 
                         <ul>
                             <li>
@@ -83,7 +83,7 @@ export default function Prices() {
                             </li>
                         </ul>
 
-                        <a href="#content">
+                        <a rel="noreferrer" href="#content">
                             <button className="button_see" id="binter"
                                 onClick={() => setButtonHandle("top site")}>
                                 Ver Mais
@@ -97,7 +97,7 @@ export default function Prices() {
                             Business
                         </p>
 
-                        <img src={business  } className="block_img"/>
+                        <img alt="" src={business  } className="block_img"/>
 
                         <ul>
                             <li>
@@ -113,7 +113,7 @@ export default function Prices() {
                             </li>
                         </ul>
 
-                        <a href="#content">
+                        <a rel="noreferrer" href="#content">
                             <button className="button_see" id="bbusines"
                                 onClick={() => setButtonHandle("business plain")}>
                                 Ver mais
