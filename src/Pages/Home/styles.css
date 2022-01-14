@@ -154,7 +154,7 @@ main{
         width: 100vh;
         display: flex;
         position: absolute;
-        align-items: end;
+        align-items: flex-end;
         right: 0px;
         bottom: 0px;
     }
@@ -295,7 +295,7 @@ main{
         height: 3vw;
         display: flex;
         align-items: flex-end;
-        justify-content: end;
+        justify-content: flex-end;
     }
     
     footer > h5{
