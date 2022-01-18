@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { Link } from "react-router-dom"
 
 
@@ -28,6 +29,34 @@ export default function Home() {
   }setWomanImage()
 
 
+  const [buttonMenu, setButtonMenu] = useState(false)
+  function setButtonMenuHandle(){
+    console.log("clicou")
+    setButtonMenu(true)
+    setCloseButtonMenu(false)
+  }if(buttonMenu){
+    document.querySelector("#mobile_menu").style.right = "20vw"
+    document.querySelector("#mobile_menu").style.top= "0vw"
+    document.querySelector("#btn_menu").style.display = "none"
+    document.querySelector("#btn_fecha").style.display = "inline-block"
+    document.querySelector("#nav").style.backgroundColor = "#fff"
+    document.querySelector("#nao_menu").style.display = "none"
+  }
+
+  const [buttonCloseMenu, setCloseButtonMenu] = useState(false)
+  function setButtonCloseMenuHandle(){
+    console.log("clicou")
+    setCloseButtonMenu(true)
+    setButtonMenu(false)
+  }if(buttonCloseMenu){
+    document.querySelector("#mobile_menu").style.right = "82vw"
+    document.querySelector("#mobile_menu").style.top= "4vw"
+    document.querySelector("#btn_menu").style.display = "inline-block"
+    document.querySelector("#btn_fecha").style.display = "none"
+    document.querySelector("#nav").style.backgroundColor = "transparent"
+    document.querySelector("#nao_menu").style.display = "block"
+  }
+
 
   return(
       <div className="AppHome">
@@ -36,36 +65,31 @@ export default function Home() {
           <div id="mobile_menu">
           
             <nav id="nav">
-              <button id="btn_menu">
+              <button id="btn_menu" onClick={() => setButtonMenuHandle()}>
                   <img alt="" src={menu} id="img_menu"/>
               </button>
-              <button id="btn_fecha">
+              <button id="btn_fecha" onClick={() => setButtonCloseMenuHandle()}>
                   <img alt="" src={back} id="img_fecha"/>
               </button>
               
               <ul id="menu">
                 <li>
-                  <a rel="noreferrer" href="CComponents/Site2it/Contents/Prices/prices.html">
+                  <Link to={"/exemplos"} rel="noreferrer">
                     Exemplos
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a rel="noreferrer" href="CComponents/Site2it/Contents/Prices/prices.html">
+                  <Link to={"/valores"} rel="noreferrer" >
                     Valores
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a rel="noreferrer" href="CComponents/Site2it/Contents/Prices/prices.html">
-                    Já sou cliente
-                  </a>
-                </li>
-
-                <li>
-                  <a rel="noreferrer" href="CComponents/Site2it/Contents/Prices/prices.html">
-                    Contato
-                  </a>
+                  <Link to={"/atendimento"} rel="noreferrer" href="Components/Site2it/Contents/Prices/prices.html">
+                    Comprar <br/>
+                    um site
+                  </Link>
                 </li>
               </ul>
             </nav>

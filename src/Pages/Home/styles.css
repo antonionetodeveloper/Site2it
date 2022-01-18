@@ -139,7 +139,7 @@ main{
     }
 
     h1.slogan{
-        color: whitesmoke;
+        color: whitesmoke;   
     }
 
     .btn{
@@ -331,59 +331,14 @@ main{
 @media screen and (max-width: 899px){
 
 
-    /*Preloading*/
-    .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #034AA6;
-        z-index: 999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .loader {
-        width: 80px;
-        height: 80px;
-    }
-
-    .loader::after {
-        content: "";
-        display: block;
-        width: 65px;
-        height: 65px;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        border-color: #fff transparent #fff transparent;
-        margin: 8px;
-        animation: spin 1.2s ease infinite;
-    }
-
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-
     body{
         margin: 0px;
         width: 100%;
         background-color: rgb(255, 255, 255);
-        
     }
-    
     
     /*HEADER*/
-    footer{
-        background-color: #034AA6;
-    }
+    
     #mobile_menu{
         display: inline-block;
         top: 4vw;
@@ -419,7 +374,6 @@ main{
     #img_fecha{
         width: 10vw;
     }
-
 
     nav#nav{
         display: flex;
@@ -464,7 +418,7 @@ main{
     .logo{    
         display: flex;
         justify-content: center;
-        margin-left: 16%;
+        margin-left: 19%;
         margin-bottom: -50vw;
         position: relative;
         bottom: -2vw;
@@ -493,17 +447,12 @@ main{
         font-size: 30pt;
     }
 
-    .slogan_header, #woman{
-        margin-top: -6vw;
-    }
-
-
     .slogan_header{
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
-        top: 35vh;
+        top: 30vh;
     }
 
     .slogan_header > a{
@@ -512,6 +461,7 @@ main{
 
     .slogan_header > h1{
         font-size: 13vw;
+        text-align: center;
         font-weight: 700;
         font-family: 'Poppins';
         color: white;
@@ -519,7 +469,7 @@ main{
         position: relative;
     }
 
-    .slogan_header > a > #btn{
+    .slogan_header > a > .btn{
         font-weight: 700;
         font-family: 'Poppins';
         color: white;
@@ -532,7 +482,7 @@ main{
     }
 
     #woman {  /*imagem com a mulher no header*/
-        width: 85%;
+        width: 65%;
         display: inline-block;
         left: 15vw;
         margin-top: 24vw;
@@ -584,15 +534,15 @@ main{
         margin-bottom: 6vw;
     }
 
-    #exemplos{
-        margin-left: 3vw;
+    .exemplos{
+        
+        border: 0;
+        background-color: #050567;
         color: white;
         font-size: 6vw;
-        text-shadow: 0.07em 0.05em #333;
-        background-color: #034AA6;
-        width: 11em;
-        height: 3em;
-        border-radius: 16vw;
+        padding: 4vw;
+        border-radius: 20vw;
+        
     }
 
 
@@ -653,18 +603,13 @@ main{
         margin-top: -8vw;
     }
 
-    #valores{    
-        margin-top: 2vw;
-        margin-left: 0vw;
+    .valores{    
+        border: 0;
+        background-color: #050567;
         color: white;
-        font-size: 7vw;
-        border-radius: 16vw;
-        text-shadow: 0.07em 0.05em #333;
-        background-color: #034AA6;
-        width: 9.1em;
-        height: 3em;
-        transition: 0.5s;
-        position: relative;
+        font-size: 6vw;
+        padding: 4vw;
+        border-radius: 20vw;
     }
 
 

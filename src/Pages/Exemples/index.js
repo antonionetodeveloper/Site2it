@@ -29,9 +29,9 @@ export default function Exemples() {
             <Container>
                 <section id="content">
                     <section id="section1" className="section_content">
-                        <a rel="noreferrer" href="https://antonionetodeveloper.github.io/BuscaCEP/" target="_blank">
-                            <div className="item" id="site2it_old">
-                                <img alt="" src={buscaCEP}/>
+                        <a rel="noreferrer" href="https://site2it.com" target="_blank">
+                            <div className="item" id="imoveis">
+                                <img alt="" src={site2it}/>
                             </div>
                         </a>
             
@@ -57,9 +57,9 @@ export default function Exemples() {
                     </section>
 
                     <section id="section3" className="section_content">
-                        <a rel="noreferrer" href="https://site2it.com" target="_blank">
-                            <div className="item" id="imoveis">
-                                <img alt="" src={site2it}/>
+                        <a rel="noreferrer" href="https://antonionetodeveloper.github.io/BuscaCEP/" target="_blank">
+                            <div className="item" id="site2it_old">
+                                <img alt="" src={buscaCEP}/>
                             </div>
                         </a>
                     </section>
